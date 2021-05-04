@@ -13,7 +13,8 @@
   <body>
     <main>
       <header>
-        <a class="logo" href="/">News Demo</a>
+        <a class="logo" href="/"><strong>News Hub</strong></a>
+
         <form action="/search" method="GET">
           <input
             autofocus
@@ -24,16 +25,30 @@
             name="q"
           />
         </form>
-        <a href="https://github.com/freshman-tech/news" class="button github-button">View on GitHub</a>
+
+        <form action="/search_hn" method="GET">
+          <input
+            autofocus
+            class="search-input"
+            value="{{ .Query }}"
+            placeholder="Enter a Hacker News topic"
+            type="search"
+            name="q"
+          />
+        </form>
+
+        <a href="https://github.com/LittleSpades/GO-news-hub" class="button github-button">View on GitHub</a>
+        
       </header>
+
       <section class="container">
         <div class="result-count">
         {{ if .Results }}
           {{ if (gt .Results.TotalResults 0)}}
-          <p>About <strong>{{ .Results.TotalResults }}</strong> results were found. You are on page <strong>{{ .CurrentPage }}</strong> of <strong> {{ .TotalPages }}</strong>.
+          <p>About <strong>{{ .Results.TotalResults }}</strong> results were found <strong>@ General News</strong>. You are on page <strong>{{ .CurrentPage }}</strong> of <strong> {{ .TotalPages }}</strong>.
           </p>
           {{ else if and (ne .Query "") (eq .Results.TotalResults 0) }}
-          <p>No results found for your query: <strong>{{ .Query }}</strong>.</p>
+          <p>No results found <strong>@ General News</strong> for your query: <strong>{{ .Query }}</strong>.</p>
           {{ end }}
         {{ end }}
         </div>
@@ -46,8 +61,8 @@
               </a>
               <p class="description">{{ .Description }}</p>
               <div class="metadata">
-                <p class="source">{{ .Source.Name }}</p>
-                <time class="published-date">{{ .FormatPublishedDate }}</time>
+                <p class="source"><strong>{{ .Source.Name }}</strong></p>
+                <time class="published-date"><strong>{{ .FormatPublishedDate }}</strong></time>
               </div>
             </div>
             <img class="article-image" src="{{ .URLToImage }}" />
