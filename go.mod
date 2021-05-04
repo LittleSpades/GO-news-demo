@@ -1,5 +1,5 @@
-module https://github.com/LittleSpades/GO-news-hub
+module github.com/LittleSpades/GO-news-hub
 
-go 1.16.3
+go 1.16
 
 require github.com/joho/godotenv v1.3.0 // indirect
