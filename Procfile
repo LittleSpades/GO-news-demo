@@ -1,1 +1,1 @@
-web: bin/news-demo-starter-files
+web: bin/GO-news-hub
