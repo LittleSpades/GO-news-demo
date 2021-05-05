@@ -1,1 +1,1 @@
-web: bin/go-news-hub
+web: bin/GO-news-hub
