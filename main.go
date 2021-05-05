@@ -27,6 +27,9 @@ func main() {
 		port = "3000"
 	}
 
+	log.Printf("PORT: %s", port)
+	//fmt.Printf("\n\nPORT: %b\n\n", port)
+
 	apiKey := os.Getenv("NEWS_API_KEY")
 	if apiKey == "" {
 		log.Fatal("Env: apiKey must be set")
