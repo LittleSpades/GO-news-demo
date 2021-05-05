@@ -6,9 +6,9 @@ After completing the tutorial, I rearranged the file structure and implemented i
 
 My final version looks like:
 
-![demo](https://pasteboard.co/K0y2Yfn.png)
+![alt text](https://pasteboard.co/K0y2Yfn.png)
 
-![demo](https://pasteboard.co/K0y3pVC.png)
+![alt text](https://pasteboard.co/K0y3pVC.png)
 
 A deployed version is available through Heroku at http://go-news-hub.herokuapp.com/.
 
