@@ -43,6 +43,23 @@ a.button:hover {
   color: var(--flame-orange);
 }
 
+a.buttonprevnext {
+  border: 2px var(--flame-orange);
+  color: var(--flame-orange);
+  border-radius: 4px;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a.buttonprevnext:hover {
+  text-decoration: none;
+  background-color: var(--flame-orange);
+  color: var(--white);
+}
+
+
+
 header {
   width: 100%;
   height: 50px;
@@ -133,6 +150,7 @@ form {
 
 .pagination {
   margin-top: 20px;
+  text-align: center;
 }
 
 .previous-page {

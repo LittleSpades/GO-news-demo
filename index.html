@@ -72,13 +72,13 @@
         <div class="pagination">
           {{ if . }}
             {{ if (gt .NextPage 2) }}
-            <a href="/search?q={{ .Query }}&page={{ .PreviousPage }}" class="button previous-page">
-              Previous
+            <a href="/search?q={{ .Query }}&page={{ .PreviousPage }}" class="buttonprevnext previous-page">
+              <strong>Previous</strong>
             </a>
             {{ end }}
             {{ if (ne .IsLastPage true) }}
-            <a href="/search?q={{ .Query }}&page={{ .NextPage }}" class="button next-page">
-              Next
+            <a href="/search?q={{ .Query }}&page={{ .NextPage }}" class="buttonprevnext next-page">
+              <strong>Next</strong>
             </a>
             {{ end }}
           {{ end }}
