@@ -4,13 +4,13 @@ In order to learn how to use GO for Web Applications, I strated by following a t
 
 After completing the tutorial, I rearranged the file structure and implemented interfaces in order to be able to use mutiple API's. The second API that I used for this exercise was the "Hacker News API" (https://hn.algolia.com/api).
 
-My final version looks like:
-
-![alt text](https://pasteboard.co/K0y2Yfn.png)
-
-![alt text](https://pasteboard.co/K0y3pVC.png)
-
 A deployed version is available through Heroku at http://go-news-hub.herokuapp.com/.
+
+Here are some pictures:
+
+![](images/news-api.png)
+
+![](images/hacker-news-api.png)
 
 ## Prerequisites
 
