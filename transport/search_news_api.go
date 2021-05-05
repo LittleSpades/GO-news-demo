@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/freshman-tech/news-demo-starter-files/news"
+	"github.com/LittleSpades/GO-news-hub/news"
 )
 
 func SearchNewsAPI(newsAPI news.NewsFetcher, apiKey string) http.HandlerFunc {

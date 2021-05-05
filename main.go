@@ -9,9 +9,8 @@ import (
 	//access operating system functionality
 	"os"
 
-	"github.com/freshman-tech/news-demo-starter-files/news"
-	"github.com/freshman-tech/news-demo-starter-files/transport"
-
+	"github.com/LittleSpades/GO-news-hub/news"
+	"github.com/LittleSpades/GO-news-hub/transport"
 	"github.com/joho/godotenv"
 )
 
