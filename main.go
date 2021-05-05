@@ -11,24 +11,20 @@ import (
 
 	"github.com/LittleSpades/GO-news-hub/news"
 	"github.com/LittleSpades/GO-news-hub/transport"
-	"github.com/joho/godotenv"
 )
 
 func main() {
 
 	//The Load method reads the .env file and loads the set variables into the environment so that they can be accessed through the os.Getenv() method
-	err := godotenv.Load()
-	if err != nil {
-		log.Println("Error loading .env file")
-	}
+	//err := godotenv.Load()
+	//if err != nil {
+	//	log.Println("Error loading .env file")
+	//}
 
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "3000"
 	}
-
-	log.Printf("PORT: %s", port)
-	//fmt.Printf("\n\nPORT: %b\n\n", port)
 
 	apiKey := os.Getenv("NEWS_API_KEY")
 	if apiKey == "" {
