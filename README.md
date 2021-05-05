@@ -1,27 +1,22 @@
-# News Demo starter files
+# GO News Hub
 
-Starter files for the News application built with Go. Tutorial:
-https://freshman.tech/web-development-with-go/
+In order to learn how to use GO for Web Applications, I strated by following a tutorial (https://freshman.tech/web-development-with-go/) for a simple app that fetches news articles matching a particular search query through the News API (https://newsapi.org/), and presents the results on the page.
 
-Here's what the [completed application](https://freshman-news.herokuapp.com/)
-looks like:
+After completing the tutorial, I rearranged the file structure and implemented interfaces in order to be able to use mutiple API's. The second API that I used for this exercise was the "Hacker News API" (https://hn.algolia.com/api).
 
-![demo](https://ik.imagekit.io/freshman/news-demo_MrYio9GKlzSi.png)
+My final version looks like:
 
-The code in this repo is meant to be a starting point for anyone following
-along with the tutorial.
+![demo](https://pasteboard.co/K0y2Yfn.png)
+
+![demo](https://pasteboard.co/K0y3pVC.png)
+
+A deployed version is available through Heroku at http://go-news-hub.herokuapp.com/.
 
 ## Prerequisites
 
 You need to have [Go](https://golang.org/dl/) installed on your computer. The
-version used to test the code in the tutorial is **1.15.3**.
+version I used is **1.16.3**.
 
-## Get started
+## Running locally
 
-- Clone or download this repository to your filesystem.
-
-```bash
-$ git clone https://github.com/Freshman-tech/news-demo-starter-files
-```
-
-- `cd` into the project directory and follow along with the [tutorial](https://freshman.tech/web-development-with-go/).
+You'll need to create a .env file with your NEWS_API_KEY.
