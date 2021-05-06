@@ -54,17 +54,19 @@
         </div>
         <ul class="search-results">
           {{ range.Results.Hits }}
-          <li class="news-article">
-            <div>
-              <a target="_blank" rel="noreferrer noopener" href="{{.URL}}">
-                <h3 class="title">{{.Title }}</h3>
-              </a>
-              <div class="metadata">
-                <p class="source"><strong>{{ .Author }}</strong></p>
-                <time class="published-date"><strong>{{ .PublishedAt }}</strong></time>
+            {{ if .URL }}
+            <li class="news-article">
+              <div>
+                <a target="_blank" rel="noreferrer noopener" href="{{.URL}}">
+                  <h3 class="title">{{.Title }}</h3>
+                </a>
+                <div class="metadata">
+                  <p class="source"><strong>{{ .Author }}</strong></p>
+                  <time class="published-date"><strong>{{ .PublishedAt }}</strong></time>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+            {{ end }}
           {{ end }}
         </ul>
         <div class="pagination">
