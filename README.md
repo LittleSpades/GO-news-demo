@@ -1,6 +1,6 @@
 # GO News Hub
 
-In order to learn how to use GO for Web Applications, I strated by following a tutorial (https://freshman.tech/web-development-with-go/) for a simple app that fetches news articles matching a particular search query through the News API (https://newsapi.org/), and presents the results on the page.
+In order to learn how to use GO for Web Applications, I started by following a tutorial (https://freshman.tech/web-development-with-go/) for a simple app that fetches news articles matching a particular search query through the News API (https://newsapi.org/), and presents the results on the page.
 
 After completing the tutorial, I rearranged the file structure and implemented interfaces in order to be able to use mutiple API's. The second API that I used for this exercise was the "Hacker News API" (https://hn.algolia.com/api).
 
